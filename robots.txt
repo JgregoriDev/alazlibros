@@ -1,0 +1,8 @@
+User-Agent: *
+Allow: /
+Disallow: /usuaris.html
+Disallow: /crear-usuaris.html
+Disallow: /galeria.html
+Disallow: /pujar-imatges.html
+
+Sitemap: http://jgregori.atwebpages.com/mapa-web.xml

@@ -1,0 +1,146 @@
+body {
+  font-size: 0.7em;
+}
+
+table.yellowTable {
+  border: 1px solid #000000;
+  /* background-color: #eeeeee; */
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+table.yellowTable td,
+table.yellowTable th {
+  border: 1px solid #aaaaaa;
+  padding: 3px 2px;
+}
+
+table.yellowTable tr:nth-child(even) {
+  background: #f1f1f1;
+}
+
+table.yellowTable thead {
+  background: #faf160;
+  background: -moz-linear-gradient(top, #fbf488 0%, #faf270 66%, #faf160 100%);
+  background: -webkit-linear-gradient(top,
+      #fbf488 0%,
+      #faf270 66%,
+      #faf160 100%);
+  background: linear-gradient(to bottom, #fbf488 0%, #faf270 66%, #faf160 100%);
+  border-bottom: 2px solid #444444;
+}
+
+table.yellowTable thead th {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #767676;
+  text-align: center;
+  border-left: 2px solid #d0e4f5;
+}
+
+table.yellowTable thead th:first-child {
+  border-left: none;
+}
+
+table.yellowTable td {
+  font-size: 1.5em;
+}
+
+table.yellowTable .links {
+  text-align: right;
+}
+
+table.yellowTable .links a {
+  /* display: inline-block; */
+  background: #faf27b;
+  color: #767676;
+  padding: 10px;
+  text-decoration: none;
+  border: 1px solid #ccc;
+}
+
+.page:hover {
+  border-radius: 100%;
+}
+
+.flexItems {
+  display: flex;
+  justify-content: end;
+  margin: 1em 0px 1em 0px;
+}
+
+.flexItems>div {
+  padding-right: 10px;
+}
+
+
+
+.ocult{
+  display: inline-block;
+}
+.enllaç{
+  display: inline-block;
+}
+@media screen and (max-width: 1045px) and (min-width: 835px) {
+  .mostrar-4 {
+    display: none;
+  }
+  .ocult{
+    display: inline-block;
+  }
+}
+@media screen and (max-width:1199px) {
+  .PositionAbsoluteDiv{
+    width: 100vw;
+  }
+  .col-9{
+    flex: 90%;
+  }
+}
+
+@media screen and (max-width: 565px) and (min-width: 300px) {
+  .enllaç{
+    display: inline-block;
+  }
+ .ocult{
+   display: none;
+ }
+
+  .mostrar-4 {
+    display: none;
+  }
+
+  .mostrar-3 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 300px) {
+ .ocult{
+   display: none;
+ }
+ .enllaç{
+   display: inline-block;
+ }
+
+  .mostrar-4 {
+    display: none;
+  }
+
+  .mostrar-3 {
+    display: none;
+  }
+
+  .mostrar-2 {
+    display: none;
+  }
+
+}
+.pa{
+  text-decoration: none;
+ 
+}
+.actiu{
+  color: #a6abb0;
+}

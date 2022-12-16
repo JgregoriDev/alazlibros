@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alazlibros pàgina d'inici">
+    <meta name="autor" content="Josep Gregori Bertomeu">
+    <title>AlaZLibros</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="src/images/logo_website.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/styles/normalize.css">
+    <link rel="stylesheet" href="src/styles/grid-layout.css">
+    <link rel="stylesheet" href="src/styles/HeaderFooterStyles.css">
+    <script src="src/javascript/headermobile.js" defer></script>
+    <link rel="stylesheet" href="src/styles/Home.css">
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=TRACKING_ID"></script>
+    <script src="src/javascript/headermobile.js" defer></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'TRACKING_ID');
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="container-fluid">
+            <div class="row">
+                <div class="col-2 containerLogo">
+
+                    <div class="flexboxLogo">
+
+                        <div>
+
+                            <a href="index.html">
+                                <img class="logoImg" src="src/images/logo_website.png" alt="AlaZLibros">
+                            </a>
+                        </div>
+                        <div id="titulLogo">
+                            <a class="logo" href="index.html">
+
+                                AlaZLibros
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 nav flexNav ">
+
+                    <div class="alignMenu ocult">
+                        <ul class="ulMenu">
+                            <li><a class="navLink" href="index.html">Inici</a></li>
+                            <li><a class="navLink" href="llibres.html">Llibres</a></li>
+                            <li><a class="navLink" href="blog.html">Blog</a></li>
+                            <li>
+                                <div class="dropdown">
+                                    <a class="navLink dropbtn" href="#">Empresa</a>
+                                    <div class="dropdown-content">
+                                        <a href="empresa.html">Empresa</a>
+                                        <a href="sobre-nosaltres.html">Sobre nosaltres</a>
+                                        <a href="contacte.html">Contacta amb nosaltres</a>
+                                        <a href="FAQ.html">FAQ</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a class="" href="busqueda.html"><img class="busqueda" src="src/images/search-solid.svg"
+                                        alt="lupa"></a></li>
+                        </ul>
+                    </div>
+                    <div class="topnav">
+                        <button class="icon" onclick="mostrarMenu()">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+
+                                <path
+                                    d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" />
+                            </svg> </button>
+                        <div id="myLinks">
+                            <ul class="ulMenu">
+                                <li><a class="navLink" href="index.html">Inici</a></li>
+                                <li><a class="navLink" href="llibres.html">Llibres</a></li>
+                                <li><a class="navLink" href="blog.html">Blog</a></li>
+                                <li>
+                                    <a class="" href="#">Empresa</a>
+                                    <div class="">
+                                        <a class="subelements" href="empresa.html">Empresa</a>
+                                        <a class="subelements" href="sobre-nosaltres.html">Sobre nosaltres</a>
+                                        <a class="subelements" href="contacte.html">Contacta amb nosaltres</a>
+                                        <a class="subelements" href="FAQ.html">FAQ</a>
+                                    </div>
+                                </li>
+                                <li class="conectarte.html"><a class="button text-white"
+                                        href="conectarte.html">Conectarte</a></li>
+                                <li class="registrar"><a class="button mt text-white"
+                                        href="registrar.html">Registrarte</a></li>
+                                <li><a class="" href="busqueda.html"><img class="busqueda"
+                                            src="src/images/search-solid.svg" alt="Lupa"></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+                <div class="col-2 flexNav buttonGroup">
+                    <div>
+                        <a class="button" href="conectarte.html">Conectarte</a>
+                    </div>
+                    <div id="container_register">
+                        <a class="button" href="registrar.html">Registrarte</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 contenedorBusqueda">
+                    <input type="search" name="search" id="search" placeholder="Buscar">
+                </div>
+            </div>
+           
+        </nav>
+    </header>
+    <main>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Llibres més llegits</h1>
+                </div>
+            </div>
+            <div class="row booksFlex">
+                <div class="col-1"><img alt="esquerra" class="arrows" src="src/images/arrow-circle-left-solid.svg">
+                </div>
+                <div class="col-2">
+                    <a href="llibre.html" class="link">
+                        <div><img alt="Nunca" class="img" src="src/images/Nunca.png"></div>
+                        <div>
+                            <h2 class="link">Nunca</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <a href="#" class="link">
+
+                        <div><img alt="El italiano" class="img" src="src/images/El italiano.png"></div>
+                        <div>
+                            <h2 class="link">El italiano</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <a href="#" class="link">
+                        <div><img alt="Por si las voces vuelven" class="img" src="src/images/Voces.png"></div>
+                        <div>
+                            <h2 class="link">Por si las voces vuelven</h2>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-1"><img alt="derecha" class="arrows" src="src/images/arrow-circle-right-solid.svg">
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h1>Llibres nous</h1>
+                </div>
+            </div>
+            <div class="row booksFlex">
+                <div class="col-1"><img alt="izquierda" class="arrows" src="src/images/arrow-circle-left-solid.svg">
+                </div>
+                <div class="col-2">
+                    <a href="#" class="link">
+
+                        <div><img alt="50 Palos" class="img" src="src/images/Palos.png"></div>
+                        <div>
+                            <h2 class="link">50 Palos</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <a href="#" class="link">
+
+                        <div><img alt="La bestia" class="img" src="src/images/La bestia.png"></div>
+                        <div>
+                            <h2 class="link">La bestia</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <a href="#" class="link">
+
+                        <div><img alt="De ninguna parte" class="img" src="src/images/De ninguna parte.png"></div>
+                        <div>
+                            <h2 class="link">De ninguna parte</h2>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-1"><img alt="Dreta" class="arrows" src="src/images/arrow-circle-right-solid.svg"></div>
+
+            </div>
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6 flexIcons">
+                    <div><img alt="Apren" src="src/images/lightbulb.png" loading="lazy">
+                        <h3>Apren</h3>
+                    </div>
+                    <div>
+                        <img alt="Llig" src="src/images/open-book.png" loading="lazy">
+                        <h3>Llig</h3>
+                    </div>
+                    <div><img alt="Descobreix" src="src/images/discover.png" loading="lazy">
+                        <h3>Descobreix</h3>
+                    </div>
+                </div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+    </main>
+    <aside></aside>
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-3">
+                <ul class="ul">
+                    <li><a class="navLink" href="index.html">Inici</a></li>
+                    <li><a class="navLink" href="llibres.html">Llibres</a>
+                        <ul class="ul">
+                            <li><a class="navLink" href="llibre.html">Llibre</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="navLink" href="blog.html">Blog</a>
+                        <ul class="ul">
+                            <li><a class="navLink" href="noticia.html">Notícia</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a class="navLink" href="empresa.html">Empresa</a>
+                        <ul class="ul">
+                            <li><a class="navLink" href="sobre-nosaltres.html">Sobre nosaltres</a></li>
+                            <li><a class="navLink" href="contacte.html">Contacta amb nosaltres</a></li>
+                            <li><a class="navLink" href="FAQ.html">FAQ</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a class="navLink" href="privacitat.html">Política de Privacitat</a></li>
+                    <li><a class="navLink" href="mapa-web.html">Mapa web</a></li>
+                </ul>
+
+            </div>
+            <div class="col-6">
+                <h3>AlaZLibros Inc.</h3>
+                <h3>NIF: 81432331A</h3>
+                <h3>Direcció: 765 Glenda Creek Apt. 889 - Annapolis, NE / 65525</h3>
+            </div>
+            <div class="col-3 socialDiv">
+                <div><a target="_blank" href="https://www.facebook.com/" title="facebook"><img class="socialNetwork"
+                            src="src/images/facebook-f-brands.svg" loading="lazy"></a></div>
+                <div><a target="_blank" href="https://www.instagram.com/" title="instagram"><img class="socialNetwork"
+                            src="src/images/instagram-brands.svg" loading="lazy"></a></div>
+                <div><a target="_blank" href="https://twitter.com/" title="twitter"><img class="socialNetwork"
+                            src="src/images/twitter-brands.svg" loading="lazy"></a></div>
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlaZlibros</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/styles/normalize.css">
+    <link rel="stylesheet" href="src/styles/grid-layout.css">
+    <link rel="stylesheet" href="src/styles/backendGenerals.css">
+    <link rel="stylesheet" href="src/styles/BackendUsers.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-3 containerLogo">
+                <div class="flex">
+                    <a href="index.html" title="AlaZLibros">
+                        <img class="logoImg" src="src/images/logo_website.png" alt="AlazLibros">
+                    </a>
+                </div>
+            </div>
+            <div class="col-9 PositionAbsoluteDiv">
+                <div>
+                    Usuari: <a href="backEndUserData.html">admin</a>
+                </div>
+                <div>
+                    <a href="#">Inici-></a>
+                    <a href="backendGallery.html">Galeria</a>
+                </div>
+                <div class="flexItems">
+                    <div>Fotos: <a href="admin"></a></div>
+                    <div>
+
+                        <select name="" id="">
+                            <option value="" disabled selected>Selecciona una opció</option>
+                            <option value="">Borrar images</option>
+                            
+                        </select>
+                    </div>
+                    <div><button>Aplicar</button></div>
+                    
+                </div>
+            
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-3 contenedor">
+              <button class="dropdown-button">
+               <img class="dropdown-item-image" src="src/images/users-solid.svg" alt="">
+               Usuaris
+               <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="backEndListUsers.html">Mostrar usuaris</a>
+                <a href="#">Crear usuari</a>
+            </div>
+            <button class="dropdown-button">
+                <img class="dropdown-item-image" src="src/images/images-solid.svg" alt="">
+                Media
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                <a href="backendGallery.html">Galeria</a>
+                <a href="#">Pujar foto</a>
+              </div>
+            </div>
+          </div>
+        <script src="src/javascript/dropdown.js">
+        </script>
+
+    </div>
+    </div>
+</body>
+
+</html>

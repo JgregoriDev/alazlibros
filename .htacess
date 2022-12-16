@@ -1,0 +1,5 @@
+user-agent: *
+	Disallow: usuaris.html
+	Disallow: crear-usuario.html
+	Disallow: galeria.html
+	Disallow: subir-archivo.html

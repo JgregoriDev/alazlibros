@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alazlibros - contacta amb nosaltres">
+    <meta name="autor" content="Josep Gregori Bertomeu">
+    <title>AlaZLibros - Contacta amb nosaltres</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="src/images/logo_website.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/styles/normalize.css">
+    <link rel="stylesheet" href="src/styles/grid-layout.css">
+    <link rel="stylesheet" href="src/styles/HeaderFooterStyles.css">
+  <script src="src/javascript/headermobile.js" defer></script>
+    <link rel="stylesheet" href="src/styles/contacte.css">
+    <script src="src/javascript/form.js" defer></script>
+</head>
+
+<body>
+  <header>
+        <nav class="container-fluid">
+            <div class="row">
+                <div class="col-2 containerLogo">
+
+                    <div class="flexboxLogo">
+
+                        <div>
+
+                            <a href="index.html">
+                                <img class="logoImg" src="src/images/logo_website.png" alt="AlaZLibros">
+                            </a>
+                        </div>
+                        <div id="titulLogo">
+                            <a class="logo" href="index.html">
+
+                                AlaZLibros
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 nav flexNav ">
+
+                    <div class="alignMenu ocult">
+                        <ul class="ulMenu">
+                            <li><a class="navLink" href="index.html">Inici</a></li>
+                            <li><a class="navLink" href="llibres.html">Llibres</a></li>
+                            <li><a class="navLink" href="blog.html">Blog</a></li>
+                            <li>
+                                <div class="dropdown">
+                                    <a class="navLink dropbtn" href="#">Empresa</a>
+                                    <div class="dropdown-content">
+    <a href="empresa.html">Empresa</a>
+                                                                            
+<a href="sobre-nosaltres.html">Sobre nosaltres</a>
+                                        <a href="contacte.html">Contacta amb nosaltres</a>
+                                        <a href="FAQ.html">FAQ</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a class="" href="busqueda.html"><img class="busqueda"
+                                        src="src/images/search-solid.svg" alt="lupa"></a></li>
+                        </ul>
+                    </div>
+                    <div class="topnav">
+                        <button class="icon" onclick="mostrarMenu()">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                               
+                                <path
+                                    d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" />
+                                </svg> </button>
+                        <div id="myLinks">
+                            <ul class="ulMenu">
+                                <li><a class="navLink" href="index.html">Inici</a></li>
+                                <li><a class="navLink" href="llibres.html">Llibres</a></li>
+                                <li><a class="navLink" href="blog.html">Blog</a></li>
+                                <li>
+                                    <a class="" href="empresa.html">Empresa</a>
+                                    <div class="">
+          <a class="subelements" href="empresa.html">Empresa</a>
+                                        <a class="subelements" href="sobre-nosaltres.html">Sobre nosaltres</a>
+                                        <a class="subelements" href="contacte.html">Contacta amb nosaltres</a>
+                                        <a class="subelements" href="FAQ.html">FAQ</a>
+                                    </div>
+                                </li>
+                                <li class="conectarte.html"><a class="button text-white" href="conectarte.html">Conectarte</a></li>                                <li class="registrar"><a class="button mt text-white" href="registrar.html">Registrarte</a></li>
+                                <li><a class="" href="busqueda.html"><img class="busqueda"
+                                            src="src/images/search-solid.svg" alt="Lupa"></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+                <div class="col-2 flexNav buttonGroup">
+                    <div>
+                        <a class="button" href="conectarte.html">Conectarte</a>
+                    </div>
+                    <div id="container_register">
+                        <a class="button" href="registrar.html">Registrarte</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 contenedorBusqueda">
+                    <input type="search" name="search" id="search" placeholder="Buscar">
+                </div>
+            </div>
+           
+        </nav>
+    </header>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div id="center">
+                    <h2 id="h2">Formulari de contacte</h2>
+                </div>
+                <div class="form">
+                    <form action="" method="post">
+                        <div class="space">
+                            <div class="bottom">
+                                <label for="name" title="Aquest camp es obligatori">Nom *:</label>
+                            </div>
+                            <div>
+                                <input class="input" type="text" placeholder="Nom" required name="name" id="name">
+                            </div>
+                        </div>
+                        <div class="space">
+                            <div class="bottom">
+                                <label for="lastname">Cognom:</label>
+                            </div>
+                            <div>
+                                <input class="input" type="text" placeholder="Cognom" name="lastname" id="lastname">
+                            </div>
+                        </div>
+                        <div class="space">
+                            <div class="bottom">
+                                <label for="phone">Teléfono:</label>
+                            </div>
+                            <div>
+                                <input class="input" type="tel" placeholder="Teléfono" name="phone" id="phone">
+                            </div>
+                        </div>
+                        <div class="space">
+                            <div class="bottom">
+                                <label for="email" title="Aquest camp es obligatori">E-mail *:</label>
+                            </div>
+                            <div>
+                                <input class="input" type="email" placeholder="E-mail" required name="email" id="email">
+                            </div>
+                        </div>
+                        <div class="space">
+                            <div class="bottom">
+                                <label for="Mensaje" title="Aquest camp es obligatori">Missatge *:</label>
+                            </div>
+                            <div>
+                                <textarea class="input" name="Mensaje" id="Mensaje" placeholder="Missatge" required
+                                    cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div class="space">
+                            <div class="botton"><input type="checkbox" required name="privacitat" id="privacitat">
+                                Accepta la nostra <a href="privacitat.html">política de privacitat</a></div>
+                        </div>
+                        <div class="space center"><input type="submit" class="button" name="send" id="button"
+                                value="Enviar"></div>
+                    </form>
+                    <div class="errorContainer"></div>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </main>
+    <aside></aside>
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-3">
+                <ul class="ul">
+                    <li><a class="navLink" href="index.html">Inici</a></li>
+                    <li><a href="llibres.html">Llibres
+                    </a></li>
+                    <li>
+                        <ul class="ul">
+                            <li><a href="llibre.html">Llibre</a></li>
+                        </ul>
+                    </li>                    <li><a class="navLink" href="blog.html">Blog</a>
+                        <ul class="ul">
+                            <li><a class="navLink" href="noticia.html">Notícia</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a class="navLink" href="empresa.html">Empresa</a>
+                        <ul class="ul">
+                            <li><a class="navLink" href="sobre-nosaltres.html">Sobre nosaltres</a></li>
+                            <li><a class="navLink" href="contacte.html">Contacta amb nosaltres</a></li>
+                            <li><a class="navLink" href="FAQ.html">FAQ</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a class="navLink" href="privacitat.html">Política de Privacitat</a></li>
+                    <li><a class="navLink" href="mapa-web.html">Mapa web</a></li>
+                </ul>
+
+            </div>
+            <div class="col-6">
+                <h3>AlaZLibros Inc.</h3>
+                <h3>NIF: 81432331A</h3>
+                <h3>Direcció: 765 Glenda Creek Apt. 889 - Annapolis, NE / 65525</h3>
+            </div>
+            <div class="col-3 socialDiv">
+                <div><a target="_blank" href="https://www.facebook.com/" title="facebook"><img class="socialNetwork"
+                            src="src/images/facebook-f-brands.svg" alt="facebook"></a></div>
+                <div><a target="_blank" href="https://www.instagram.com/" title="instagram"><img class="socialNetwork"
+                            src="src/images/instagram-brands.svg" alt="instagram"></a></div>
+                <div><a target="_blank" href="https://twitter.com/" title="twitter"><img class="socialNetwork"
+                            src="src/images/twitter-brands.svg" alt="twitter"></a></div>
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>

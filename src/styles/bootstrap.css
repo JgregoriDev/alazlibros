@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.bg-primary {
+    background-color: #fff78c !important;
+}
+
+.btn-secundary {
+    background-color: #faf160 !important;
+}
+
+.btn-primary {
+    background-color: #986ef5 !important;
+    padding: 15px 10px;
+    border-radius: 15px;
+}
+
+
+
+.colorLogo {
+    color: #986ef5;
+}
+
+.enllaçosMenu {
+    color: #7757a1 !important;
+}
+
+.WebsiteOwnerData {
+    color: #7757a1;
+}
+
+.enllaçosMenu:hover {
+    border-bottom: 1px solid #555;
+}
+.dropdown-item:focus,.dropdown-item:hover{
+    background-color: none !important;
+}
+.h1 {
+    color: #551a8b;
+}
+
+.border {
+    border: 0 !important
+}
+.list{
+    list-style: none;
+}
+.breadcrumb {
+    --bs-breadcrumb-divider: '->';
+}
+
+.lupa {
+    height: 10px;
+    width: 10px;
+}
+
+.image-Portades {
+    height: 200px;
+    width: 125px;
+    border-radius: 15px;
+}
+
+.btn-primary:º {
+    color: #555;
+}
+
+.lupa {
+    height: 15px;
+    width: 15px;
+}
+
+.img-footer {
+    height: 30px;
+    width: 30px;
+}
+.dropdown-item:focus, .dropdown-item:hover{
+    background-color: none !important;
+}
+.dropdown-icon::after {
+    /* display: none; */
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    content: url('../images/angledown.svg') !important;
+}
+
+.margin-top {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.socialDiv>div:hover {
+    cursor: pointer;
+    transform: translateY(+10px);
+}
+.link{
+    color: #71409e;
+}
+.dropdown-button{
+    background-color: yellow;
+}
+
+
+.img-transform {
+    transform: translateY(-10px);
+}
+
+
+
+.lista {
+    list-style: none;
+}
+
+@media only screen and (max-width: 575px) {
+    .image-noticia {
+        height: 425px;
+        width: 175px;
+    }
+
+    .image-logo {
+        height: 70px;
+        width: 45px;
+
+    }
+}
+
+@media only screen and (min-width: 577px) {
+    .image-noticia {
+        height: 500px;
+        width: 350px;
+    }
+
+    .image-logo {
+        height: 50px;
+        width: 50px;
+
+    }
+}
+
+svg {
+    height: 50px;
+    width: 50px;
+}
+
+@media screen and (max-width:991px) {
+    .dropdown>.dropdown-menu {
+        display: block !important;
+        background-color:#fff78c !important;
+        border: none;
+    }
+}
+.pabsolute{
+    position: absolute;
+    top: -60px;
+    right: 10px;
+}
+@media screen and (min-width:992px) {
+    .dropdown:hover>.dropdown-menu {
+        display: block;
+    }
+    .dropdown-menu{
+        background-color: #f1f1f1 !important;
+        margin: 0;
+    }
+    .dropdown-item:focus, .dropdown-item:hover{
+        border-bottom: 1px solid black !important;
+        background-color: #dddddd !important;
+    }
+}

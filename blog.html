@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="ca">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Alazlibros secció noticies">
+  <meta name="autor" content="Josep Gregori Bertomeu">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" defer
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" defer
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+  </script>
+
+  <link rel="shortcut icon" href="src/images/logo_website.png" type="image/x-icon">
+  <link rel="stylesheet" href="src/styles/bootstrap.css">
+  <title>Alazlibros - Blog</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="container-fluid">
+    <div class="row bg-primary py-1">
+      <div class="col-12 col-lg-3 d-inline-flex align-items-center">
+        <a class="navbar-brand fs-1 colorLogo" title="AlaZlibros" href="index.html">
+          <img src="src/images/logo_website.png" loading="lazy" class="image-logo" alt="AlaZLibros">
+        </a>
+        <a class="navbar-brand fs-1 colorLogo" title="AlaZlibros" href="index.html">
+          <h1 class="h1">AlazLibros</h1>
+        </a>
+
+      </div>
+      <div class="col-12 col-lg-6 col-xl-7">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="">
+            <div class="">
+              <button class="navbar-toggler pabsolute" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+
+                    <path
+                      d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z">
+                    </path>
+                  </svg>
+                </span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item me-auto mx-lg-3">
+                  <a class="nav-link fs-4 enllaçosMenu" aria-current="page" href="index.html">Inici</a>
+                </li>
+                <li class="nav-item me-auto mx-lg-3">
+                  <a class="nav-link fs-4 enllaçosMenu" href="llibres.html">Llibres</a>
+                </li>
+                <li class="nav-item me-auto mx-lg-3">
+                  <a class="nav-link fs-4 enllaçosMenu" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item me-auto mx-lg-3 dropdown">
+                  <a class="nav-link dropdown-icon fs-4 enllaçosMenu" href="empresa.html" id="navbarDropdown"
+                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Empresa
+                  </a>
+                  <ul class="dropdown-menu ms-3" aria-labelledby="navbarDropdown">
+                    <li class="ms-2">
+                      <a class="dropdown-item fs-4 enllaçosMenu py-1" href="empresa.html">Empresa</a>
+                    </li>
+                    <li class="ms-2">
+                      <a class="dropdown-item fs-4 enllaçosMenu py-1" href="sobre-nosaltres.html">Sobre nosaltres</a>
+                    </li>
+                    <li class="ms-2">
+                      <a class="dropdown-item fs-4 enllaçosMenu py-1" href="contacte.html">Contacta amb nosaltres</a>
+                    </li>
+                    <li class="ms-2">
+                      <a class="dropdown-item fs-4 enllaçosMenu py-1" href="FAQ.html">FAQ</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item me-auto d-flex">
+                  <a class="mx-1 d-inline-flex" href="busqueda.html">
+                    <img class="lupa my-auto" src="src/images/search-solid.svg" loading="lazy" alt="Lupa">
+                  </a>
+                </li>
+                <li>
+                  <ul class="list min-vw-100 d-lg-none my-2 nav-item me-auto">
+                    <li class="my-1 ">
+                      <a class="btn btn-primary border-0 mx-1 px-xl-3 px-lg-1" href="conectarte.html">Conectarte</a>
+                    </li>
+                    <li class="my-1">
+                      <a class="btn btn-primary border-0 mx-1 px-3" href="registrar.html">Registrarte</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="d-none d-lg-inline-flex justify-content-start col-lg-3 col-xl-2">
+        <a class="btn btn-primary border-0 mx-1 my-2 px-lg-3" href="conectarte.html">Conectarte</a>
+        <a class="btn btn-primary border-0 mx-1 my-2 px-lg-3" href="registrar.html">Registrarte</a>
+      </div>
+    </div>
+  </header>
+  <!-- Contingut noticies -->
+  <main class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-lg-9">
+        <div class="row mx-5">
+          <div class="col-12 col-md-9">
+            <!-- Molles de pà -->
+            <div class="mt-2">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item "><a class="text-decoration-none link" href="index.html">Inici</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                </ol>
+              </nav>
+            </div>
+            <!-- Noticies -->
+            <section>
+              <div class="bg-light w-100 py-3 text-center">
+                <h1 class="my-2">Noticies més recents</h1>
+              </div>
+              <!-- Noticia 1 -->
+              <article class="border-bottom mb-3">
+                <div class="my-4">
+                  <a title="Noticies el senyor dels anells" href="noticia.html" class="text-decoration-none">
+                    <h2>Parlant del "Señor de los anillos"</h2>
+                  </a>
+                </div>
+                <div class="text-center my-2">
+                  <a title="Noticia Parlant del 'senyor de los anillos'>'" href="noticia.html"><img
+                      src="src/images/anell.png" loading="lazy" class="rounded img-fluid image-noticia"
+                      alt="El senyor dels Anells"></a>
+                </div>
+
+                <p class="my-4">Etiquetes: <a title="" href="#"
+                    class="rounded-pill bg-primary text-decoration-none mx-2">Llibre</a>
+                  <a title="Tolkien" href="#" class="rounded-pill bg-primary text-decoration-none mx-2">Tolkien</a>
+                  <a title="El senyor dels anells" href="#" class="rounded-pill bg-primary text-decoration-none mx-2">El
+                    senyor de los anillos</a>
+                </p>
+                <p><i class="bi bi-chat mx-2"></i>Comentaris: <a title="" href="noticia.html#comentaris">2</a></p>
+
+                <p>L'obra creada per J.R. Tolkien i protagonitzada per Frodo i la companyia de l'anell. Al cual li tenim
+                  molta devoció no es una obra perfecte anem a parlar de
+                  les llums i sumbres de l'obra literaria... <a title="Noticies el senyor dels anells"
+                    href="noticia.html">Llegir més</a></p>
+              </article>
+              <!-- Noticia 2 -->
+              <article class="border-bottom mb-3">
+                <div class="my-4">
+                  <a href="#" class="text-decoration-none" title="Ferramentes">
+                    <h2>Ferramentes que ens duriem durant un camping"</h2>
+                  </a>
+                </div>
+                <div class="text-center my-2">
+                  <a href="" title="Camping">
+                    <img src="src/images/Camping.png" class="img-fluid image-noticia" alt="Camping">
+                  </a>
+                </div>
+                <p class="my-4">Etiquetes: <a href="#" class="rounded-pill bg-primary text-decoration-none">Llibre </a>
+                </p>
+                <p><i class="bi bi-chat mx-2"></i>Comentaris: <a href="#">0</a></p>
+
+
+                <p>Aquest es un llibre satira que ens explica amb humor quines ferramentes es duria si anar de
+                  camping... <a href="#">Llegir més</a></p>
+              </article>
+              <!-- Noticia 3 -->
+              <article class="border-bottom mb-3">
+                <div class="my-4">
+                  <a href="#" class="text-decoration-none">
+                    <h2>Les alocades aventures de un cirugia"</h2>
+                  </a>
+                </div>
+                <div class="text-center my-2">
+                  <a href="">
+                    <img src="src/images/Cirugia.png" class="img-fluid image-noticia" alt="Cirurgia">
+                  </a>
+                </div>
+                <p class="my-4">Etiquetes: <a href="#" class="rounded-pill bg-primary text-decoration-none">Llibre </a>
+                </p>
+                <p><i class="bi bi-chat"></i>Comentaris: <a href="#">2</a></p>
+
+
+                <p>Aquest llibre ha sigut un obra relatada de una manera técnica per accesible per a tot el món... <a
+                    href="#">Llegir més</a></p>
+              </article>
+              <!-- paginador -->
+              <div class="">
+                <nav class="float-end" aria-label="Page navigation example">
+                  <ul class="pagination">
+                    <li class="page-item text-end"><a class="page-link" href="#">Anterior</a></li>
+                    <li class="page-item text-end"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item text-end"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item text-end"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item text-end"><a class="page-link" href="#">Seguent</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </section>
+          </div>
+        </div>
+
+      </div>
+      <!-- Barra lateral Segon blog -->
+      <aside class="d-none d-lg-block col-lg-3 my-2">
+        <h4><i class="bi bi-book my-2 mx-1"></i>Noticies més llegides</h4>
+        <div class="d-flex flex-column mt-1">
+          <div class="d-inline-flex align-items-center my-2">
+            <a href="#" title="Els jocs de la fam">
+              <img class="image-Portades" loading="lazy" src="src/images/juegos.png" alt="Els jocs de la fam">
+            </a>
+            <a href="#" title="Els jocs de la" class="text-decoration-none">
+              <h5>Ressenya Els jocs de la fam</h5>
+            </a>
+          </div>
+          <div class="d-inline-flex align-items-center my-2">
+            <a href="#" title="L'alquimista">
+              <img class="image-Portades" loading="lazy" src="src/images/The Alchemist.png" alt="L'alquimista">
+            </a>
+            <a href="#" title="" class="text-decoration-none">
+              <h5>Ressenya l'alquimista</h5>
+            </a>
+          </div>
+          <div class="d-inline-flex align-items-center my-2">
+            <a href="#" title="L'error en les nostres estrelles">
+              <img class="image-Portades" loading="lazy" src="src/images/The Fault in Our Stars.png"
+                alt="L'error en les nostres estrelles">
+            </a>
+            <a href="#" title="L'error en les nostres estrelles" class="text-decoration-none">
+              <h5>Ressenya L'error en les nostres estrelles</h5>
+            </a>
+          </div>
+          <div class="d-inline-flex align-items-center my-2">
+            <a href="#" title="To Kill a Mockingbird">
+              <img class="image-Portades" loading="lazy" src="src/images/To Kill a Mockingbird.png"
+                alt="To Kill a Mockingbird">
+            </a>
+            <a href="#" title="To Kill a Mockingbird" class="text-decoration-none">
+              <h5>Ressenya To Kill a Mockingbird</h5>
+            </a>
+          </div>
+        </div>
+      </aside>
+      <!-- Segon blog -->
+      <div class="d-block d-lg-none col-md-12 my-2">
+        <h2><i class="bi bi-book my-2 mx-1"></i>Noticies més llegides</h2>
+        <div class="d-flex flex-column flex-md-row text-center mt-1">
+          <div class="align-items-center my-2">
+            <a href="#" title="Els jocs de la fam">
+              <img class="image-Portades" loading="lazy" title="Jocs de la fam" src="src/images/juegos.png"
+                alt="Els jocs de la fam">
+
+            </a>
+            <a href="" class="text-decoration-none">
+              <h2>Ressenya Els jocs de la fam</h2>
+            </a>
+          </div>
+          <div class="my-2">
+            <a href="" title="Ressenya l'alquimista">
+
+              <img class="image-Portades" loading="lazy" src="src/images/The Alchemist.png" alt="L'alquimista">
+            </a>
+            <a href="" class="text-decoration-none">
+              <h2>Ressenya l'alquimista</h2>
+            </a>
+          </div>
+          <div class="align-items-center my-2">
+            <a href="#" title="L'error en les nostres estrelles">
+              <img class="image-Portades" loading="lazy" src="src/images/The Fault in Our Stars.png"
+                alt="L'error en les nostres estrelles">
+
+            </a>
+            <a href="#" class="text-decoration-none">
+              <h2>Ressenya L'error en les nostres estrelles</h2>
+            </a>
+          </div>
+          <div class="align-items-center my-2">
+            <a href="#" title="To kill a Mockingbird">
+              <img class="image-Portades" loading="lazy" src="src/images/To Kill a Mockingbird.png"
+                alt="To Kill a Mockingbird">
+
+            </a>
+            <a href="#" class="text-decoration-none">
+              <h2>Ressenya To Kill a Mockingbird</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <!-- footer -->
+  <footer class="container-fluid mt-3 bg-primary pt-3">
+    <div class="row">
+      <div class="col-md-3">
+        <ul class="lista ">
+          <li><a class="text-decoration-none enllaçosMenu" href="index.html">Inici</a></li>
+          <li><a class="text-decoration-none enllaçosMenu" href="llibres.html">Llibres
+            </a></li>
+            <li>
+              <ul class="lista">
+                <li>
+                  <a class="text-decoration-none enllaçosMenu" href="llibre.html">
+                    Llibre
+                  </a>
+                </li>
+              </ul>
+            </li>
+          <li><a class="text-decoration-none enllaçosMenu" href="blog.html">Blog</a>
+            <ul class="lista">
+              <li><a class="text-decoration-none enllaçosMenu" href="noticia.html">Notícia</a></li>
+            </ul>
+          </li>
+
+          <li><a class="text-decoration-none enllaçosMenu" href="empresa.html">Empresa</a>
+            <ul class="lista">
+              <li><a class="text-decoration-none enllaçosMenu" href="sobre-nosaltres.html">Sobre nosaltres</a></li>
+              <li><a class="text-decoration-none enllaçosMenu" href="contacte.html">Contacta amb nosaltres</a></li>
+              <li><a class="text-decoration-none enllaçosMenu" href="FAQ.html">FAQ</a></li>
+            </ul>
+          </li>
+
+          <li><a class="text-decoration-none enllaçosMenu" href="privacitat.html">Política de Privacitat</a></li>
+          <li><a class="text-decoration-none enllaçosMenu" href="mapa-web.html">Mapa web</a></li>
+        </ul>
+
+      </div>
+      <div class="col-md-6">
+        <h3 class="WebsiteOwnerData">AlaZLibros Inc.</h3>
+        <h3 class="WebsiteOwnerData">NIF: 81432331A</h3>
+        <h3 class="WebsiteOwnerData">Direcció: 765 Glenda Creek Apt. 889 - Annapolis, NE / 65525</h3>
+      </div>
+      <div class="col-md-3 d-inline-flex justify-content-around align-items-start mt-9">
+        <div class="margin-top"><a target="_blank" href="https://www.facebook.com/" title="facebook"><img
+              class="img-footer img-transform" loading="lazy" src="src/images/facebook-f-brands.svg" alt="facebook"></a>
+        </div>
+        <div class="margin-top"><a target="_blank" href="https://www.instagram.com/" title="instagram"><img
+              class="img-footer img-transform" loading="lazy" src="src/images/instagram-brands.svg" alt="instagram"></a>
+        </div>
+        <div class="margin-top"><a target="_blank" href="https://twitter.com/" title="twitter"><img
+              class="img-footer img-transform" loading="lazy" src="src/images/twitter-brands.svg" alt="twitter"></a>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+</body>
+
+</html>

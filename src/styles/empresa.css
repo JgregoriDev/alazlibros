@@ -1,0 +1,62 @@
+.workers {
+  height: 250px;
+  width: 250px;
+}
+.flexWorkers {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.col-12 > h1 {
+  text-align: center;
+}
+.arrow {
+  height: 115px;
+  width: 115px;
+}
+.contact-div {
+  font-size: 1.6em;
+  color: white;
+  background: #fff78c;
+  background: -moz-linear-gradient(left, #fff78c 0%, #986ef5 50%, #fff78c 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #fff78c 0%,
+    #986ef5 50%,
+    #fff78c 100%
+  );
+  background: linear-gradient(to right, #fff78c 0%, #986ef5 50%, #fff78c 100%);
+  display: flex;
+  align-items: center;
+  font-size: 2em;
+}
+.a {
+  /* color: white; */
+  /* font-weight: bold; */
+  text-decoration: none;
+}
+.about-us {
+  color: #000;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  /* font-size: 1.5vw; */
+  font-size: 22px;
+  background: #986ef5;
+  background: -moz-linear-gradient(left, #986ef5 0%, #fff78c 50%, #986ef5 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #986ef5 0%,
+    #fff78c 50%,
+    #986ef5 100%
+  );
+  background: linear-gradient(to right, #986ef5 0%, #fff78c 50%, #986ef5 100%);
+}
+.col-9 > a {
+  padding-right: 10px;
+}
+.FAQcontent{
+    padding: 50px;
+    font-size: 1.6em;
+}

@@ -1,0 +1,29 @@
+audio{
+  margin: 20px;
+}
+.img {
+  width: 100%;
+}
+p {
+  line-height: 1.5em;
+  font-size: 1.8vw;
+}
+.col-12 {
+  text-align: center;
+}
+audio {
+  background-color: RGBA(255, 247, 140, 1);
+  width: 25vw;
+}
+
+audio:hover {
+  color: #fff78c;
+  filter: drop-shadow(2px 3px 3px #333);
+}
+@media screen and (max-width: 900px) {
+  .left,
+  .main,
+  .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}

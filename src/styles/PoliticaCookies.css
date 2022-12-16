@@ -1,0 +1,45 @@
+p {
+    font-size: 1.4em;
+    line-height: 150%;
+}
+#ButtonScrollTop {
+    background-image: url("../images/arrow up.svg");
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #986ef5;
+    color: white;
+    padding: 15px;
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#ButtonScrollTop:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+.centerText{
+    text-align: center;
+}
+.path{
+    padding-top: 50px;
+}
+.link{
+    padding-left: 20px;
+    padding-right: 10px;
+}
+main>article{
+    padding-bottom: 1em;
+}
+.center{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    border: 1px solid gray;
+}

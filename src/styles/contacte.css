@@ -1,0 +1,30 @@
+.space{
+    margin: 15px;
+}
+.input{
+    width: 100%;
+}
+.center{
+    text-align: center;
+}
+div>input{
+    margin-bottom: 1.5em;
+}
+#button{
+    padding: 10px 2em;
+    font-size: 1.6em    ;
+    font-weight: bold;
+}
+label{
+    padding-left: 10px;
+}
+.bottom{
+    margin-bottom: 10px;
+}
+#Mensaje{
+    resize: none;
+
+}
+#h2{
+    text-align: center;
+}

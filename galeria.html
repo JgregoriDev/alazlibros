@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alazlibros pujar imatges">
+    <meta name="autor" content="Josep Gregori Bertomeu">
+    <title>AlaZlibros - Galeria d'imatges</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/styles/normalize.css">
+    <link rel="stylesheet" href="src/styles/grid-layout.css">
+    <link rel="stylesheet" href="src/styles/backendGenerals.css">
+    <link rel="stylesheet" href="src/styles/BackendGallery.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-3 containerLogo ">
+                <div class="flex">
+                    <a href="index.html" title="AlaZLibros">
+                        <img class="logoImg" src="src/images/logo_website.png" alt="AlazLibros">
+                    </a>
+                </div>
+                <div class="contenedor">
+                    <button class="dropdown-button">
+                        <img class="dropdown-item-image" src="src/images/users-solid.svg" alt="derecha">
+                        Usuaris
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="usuaris.html">Mostrar usuaris</a>
+                        <a href="crear-usuari.html">Crear usuari</a>
+                    </div>
+                    <button class="dropdown-button">
+                        <img class="dropdown-item-image" src="src/images/images-solid.svg" alt="images">
+                        Media
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="galeria.html">Galeria</a>
+                        <a href="pujar-imatge.html">Pujar imatge</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9 PositionAbsoluteDiv">
+                <div>
+                    Usuari: <a href="backEndUserData.html">admin</a>
+                </div>
+                <div>
+                    <a href="index.html" class="pa">Inici-></a>
+                    <a href="galeria.html" class="pa actiu">Galeria</a>
+                </div>
+                <div>
+                    <p>Usuari: admin</p>
+                    <div class="Title">
+                        <h2>Galeria d'imatges utilitzades en la web</h2>
+                    </div>
+                    <div class="flexOptions">
+
+                        <div>
+                            
+                            <input type="search" name="buscar" placeholder="Buscar" id="buscar">
+                        </div>
+                        <div><button>Buscar</button></div>
+                    </div>
+
+                </div>
+                <div class="galleryContainer">
+              
+                    <div class="rowGallery">
+
+                        <div>
+                            <a href="#"><img src="src/images/La bestia.png" alt="La bestia"><p>La bestia</p></a>
+
+                        </div>
+                        <div>
+                            <a href="#"><img src="src/images/carlos.png" alt="La cocina de tu vida"><p>La cocina de tu vida</p></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="src/images/Nunca.png" alt="Nunca"><p>Nunca</p></a>
+                        </div>
+                    </div>
+                    <div class="rowGallery">
+
+                        <div>
+                            <a href="#"><img src="src/images/ultimo.png" alt="Últimos dias en Berlín"><p>Últimos dias en Berlín</p></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="src/images/Palos.png" alt="50 palos y sigo soñando"><p>50 palos y sigo soñando</p></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="src/images/cuenta.png" alt="La cuenta atra para el verano"><p>La cuenta atra para el verano</p></a>
+                        </div>
+                    </div>
+                    <div class="rowGallery">
+
+                        <div>
+                            <a href="#"><img src="src/images/Harry.png" alt="Harry Potter Saga"><p>Harry Potter Saga </p></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="src/images/Mercader.png" alt="Mercader"><p>El mercader de libros</p></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="src/images/Villano.png" alt="Villano"><p>Villano</p></a>
+                        </div>
+                    </div>
+                    <div class="flexNav">
+                        <a class="last" href="#">Pàgina anterior</a> <a class="active page" href="#">1</a> <a
+                            class="page" href="#">2</a> <a class="page" href="#">3</a>
+                        <a class="page" href="#">4</a> <a class="next" href="#">Pàgina següent</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="src/javascript/dropdown.js">
+    </script>
+
+</body>
+
+</html>

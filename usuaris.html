@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alazlibros secció de preguntes i respostes">
+    <meta name="autor" content="Josep Gregori Bertomeu">
+    <title>AlaZlibros Usuaris</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/styles/normalize.css">
+    <link rel="stylesheet" href="src/styles/grid-layout.css">
+    <link rel="stylesheet" href="src/styles/backendGenerals.css">
+    <link rel="stylesheet" href="src/styles/BackendUsers.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-3 containerLogo">
+                <div class="flex">
+                    <a href="index.html" title="AlaZLibros">
+                        <img class="logoImg" src="src/images/logo_website.png" alt="AlazLibros">
+                    </a>
+                </div>
+                <div class="contenedor">
+                    <button class="dropdown-button">
+                        <img class="dropdown-item-image" src="src/images/users-solid.svg" alt="">
+                        Usuaris
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="usuaris.html">Mostrar usuaris</a>
+                        <a href="crear-usuari.html">Crear usuari</a>
+                    </div>
+                    <button class="dropdown-button">
+                        <img class="dropdown-item-image" src="src/images/images-solid.svg" alt="">
+                        Media
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="galeria.html">Galeria</a>
+                        <a href="pujar-imatge.html">Pujar imatge</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9 PositionAbsoluteDiv">
+                <div>
+                    Usuari: <a href="backEndUserData.html">admin</a>
+                </div>
+                <div>
+                    <a href="index.html" class="pa">Inici-></a>
+                    <a href="#" class="pa actiu">Usuaris</a>
+                </div>
+                <div class="flexItems">
+                    <div>Usuari: <a href="admin"></a></div>
+                    <div>
+
+                        <select name="Rol" id="Choice">
+                            <option disabled selected>Selecciona una opció</option>
+                            <option value="1">Borrar usuaris</option>
+
+                        </select>
+                    </div>
+                    <div><button>Aplicar</button></div>
+
+                </div>
+                <table class="yellowTable">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th class="mostrar-1">Usuari</th>
+                            <th class="mostrar-4">E-mail</th>
+                            <th class="mostrar-2">Rol usuari</th>
+                            <th class="ocult">Registrat desde</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td class="mostrar-1"><input type="checkbox"></td>
+                            <td class="mostrar-1"><a href="usuaris.html">admin</a></td>
+                            <td class="mostrar-4">admin@alazlibros.es</td>
+                            <td class="mostrar-2">administrador</td>
+                            <td class="mostrar-3">17/12/2021</td>
+                        </tr>
+                        <tr>
+                            <td class="mostrar-1"><input type="checkbox"></td>
+                            <td class="mostrar-1"><a href="#">Homeycomm</a></td>
+                            <td class="mostrar-4">jmoss890@zippymail.info</td>
+                            <td class="mostrar-2">Usuari normal</td>
+                            <td class="mostrar-3">17/12/2021</td>
+                        </tr>
+                        <tr>
+                            <td class="mostrar-1"><input type="checkbox"></td>
+                            <td class="mostrar-1"><a href="#">Apaxisys</a></td>
+                            <td class="mostrar-4">rs21@lipperlloo.info</td>
+                            <td class="mostrar-2">Usuari normal</td>
+                            <td class="mostrar-3">17/12/2021</td>
+                        </tr>
+                        <tr>
+                            <td class="mostrar-1"><input type="checkbox"></td>
+                            <td class="mostrar-1"><a href="#">Solidenerra</a></td>
+                            <td class="mostrar-4">mccn718@tradermail.info</td>
+                            <td class="mostrar-2">Moderador</td>
+                            <td class="mostrar-3">17/12/2021</td>
+                        </tr>
+                    </tbody>
+                    <td colspan="5">
+
+                        <div class="links"><a class="enllaç" href="#">Pàgina anterior</a>
+                            <a class="active page ocult" href="#">1</a>
+                            <a  class="page ocult" href="#">2</a>
+                            <a class="page ocult " href="#">3</a>
+                            <a class="page ocult" href="#">4</a>
+                            <a class="enllaç" href="#">Pàgina següent</a>
+                        </div>
+                    </td>
+                </table>
+            </div>
+        </div>
+
+        <script src="src/javascript/dropdown.js">
+        </script>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.container-fluid{
+  height: 100vh;
+}
+img {
+  height: 75px;
+  width: 75px;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+
+}
+.logoImg {
+  width: 75px;
+  height: 75px;
+}
+.margin-top{
+  margin-top: 10px;
+}
+.contenedor {
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.contenedor a,
+.dropdown-button {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 2em;
+  color: #4E4E4E;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.contenedor a:hover,
+.dropdown-button:hover {
+  background-color: #f1f1f1;
+  color: #000000;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the contenedor */
+  font-size: 10px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+.active {
+  background-color: #faf160 !important;
+  color: #000000;
+  font-weight: bold;
+}
+
+.dropdown-container {
+  display: none;
+  padding-left: 8px;
+}
+
+.fa-caret-down {
+  float: right;
+  width: 20px;
+  height: 20px;
+  margin-right: 30px;
+}
+.dropdown-item-image{
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+
+}
+.dropdown-container a {
+  display: block;
+}
+@media screen and (max-width: 1199px) {
+  .contenedor{
+    width: 100vw;
+  }
+  .col-3 {
+    padding-top: 15px;
+  }
+  .contenedor, a {
+    font-size: 1.3em;
+  }
+}
+.pa{
+  text-decoration: none;
+ 
+}
+.actiu{
+  color: #a6abb0;
+}
+.dropdown-button{
+  background-color: #f3f3f3;
+}

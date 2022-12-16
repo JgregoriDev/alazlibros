@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alazlibros secció de preguntes i respostes">
+    <meta name="autor" content="Josep Gregori Bertomeu">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="src/images/logo_website.png" type="image/x-icon">
+    <title>AlaZlibros Publicar imatge</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/styles/normalize.css">
+    <link rel="stylesheet" href="src/styles/grid-layout.css">
+    <link rel="stylesheet" href="src/styles/backendGenerals.css">
+    <link rel="stylesheet" href="src/styles/BackendUploadfiles.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row ">
+            <aside class="col-3 containerLogo">
+                <div class="flex">
+                    <a href="index.html" title="AlaZLibros">
+                        <img class="logoImg" src="src/images/logo_website.png" alt="AlazLibros">
+                    </a>
+                </div>
+                <div class="contenedor">
+                    <button class="dropdown-button">
+                        <img class="dropdown-item-image" src="src/images/users-solid.svg" alt="users">
+                        Usuaris
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="usuaris.html">Mostrar usuaris</a>
+                        <a href="crear-usuari.html">Crear usuari</a>
+                    </div>
+                    <button class="dropdown-button">
+                        <img class="dropdown-item-image" src="src/images/images-solid.svg" alt="Media">
+                        Media
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="galeria.html">Galeria</a>
+                        <a href="pujar-imatge.html">Pujar imatge</a>
+                    </div>
+                </div>
+            </aside>
+            <main class="col-9">
+                <p>Usuari <a href="#">admin</a></p>
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-10">
+                        <form action="pujar-imatge.php" method="post">
+                            <div class="margin">
+                                <a href="index.html" class="pa">Inici</a>><a href="#" class="actiu pa">Publicar
+                                    imatge</a>
+                            </div>
+                            <div>
+                                <label for="imatge">Nom imatge:</label>
+                                <div class="margin">
+                                    <input placeholder="Imatge" class="width" type="text" name="imatge" id="imatge">
+                                </div>
+                            </div>
+                            <div class="margin">
+                                <label for="link">Enllaç</label>
+                                <div>
+                                    <input placeholder="Enllaç imatge" class="width" type="url" name="link" id="link">
+                                </div>
+                            </div>
+                            <div class="margin">
+                                <label for="img">Imatge</label>
+                                <div class="margin">
+                                    <input class="width" type="file" name="img" id="img">
+                                </div>
+                            </div>
+                            <div class="margin">
+                                <label for="Etiquetes">Etiquetes</label>
+                                <div class="margin">
+                                    <input placeholder="Etiquetes" class="width" type="text" name="Etiquetes"
+                                        id="Etiquetes">
+                                </div>
+                            </div>
+                            <div class="width">
+                                <input type="submit" class="button" value="Publicar imatge">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+
+            </main>
+
+
+        </div>
+    </div>
+    <script src="src/javascript/dropdown.js">
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+.page ,.next,.last {
+    display: inline-flex;
+    margin: 10px;
+    background: #faf27b;
+    color: #767676;
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+}
+.link{
+    text-align: center;
+}
+.page:hover{
+    border-radius: 100%;
+}
+.page:hover,.next:hover,.last:hover{
+    background: rgb(255,255,255,.7);
+}
+.page:hover{
+    border-radius: 100%;
+}
+.galleryContainer{
+    padding: 1.9em;
+}
+.flexNav1{
+    display: flex;
+    padding-top: 50px;
+    justify-content: end;
+}
+
+.rowGallery>div{
+   
+    text-align: center;
+}
+.img{
+    height: 325px;
+    width: 275px;
+}
+#title{
+    text-align: center;
+}
+.mes-Llegits{
+    display: flex;
+    flex-direction: column;
+}
+.imgSidebar{
+    height: 105px;
+    width: 85px;
+}
+.flexInLine{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.p{
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+#flexSearch{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+}
+
+.height{
+    height: 45px;
+    margin-right: 10px;
+}
+.filtros{
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+.margin_bottom{
+    margin-bottom: 75px;
+}
+input[type="checkbox"]{
+    margin: 0px 10px 20px 15px;
+}
+#apply_button{
+    margin-left: 15px;
+    
+}
+.borde_gris{
+    border-left: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+@media screen and (min-width:841px) {
+    .rowGallery{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-content: center;
+        margin-top: 50px;
+    }
+    #buscar{
+        width: 350px;
+    }
+    
+
+}
+@media screen and (max-width:840px) {
+    .rowGallery{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    #buscar{
+        width: 190px;
+    }
+}

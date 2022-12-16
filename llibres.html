@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alazlibros secció de llibres">
+    <meta name="autor" content="Josep Gregori Bertomeu">
+    <title>AlaZLibros - Llibres</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="src/images/logo_website.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/styles/normalize.css">
+    <link rel="stylesheet" href="src/styles/grid-layout.css">
+    <link rel="stylesheet" href="src/styles/HeaderFooterStyles.css">
+    <script src="src/javascript/headermobile.js" defer></script>
+    <link rel="stylesheet" href="src/styles/llibres.css">
+    <script src="src/javascript/busqueda.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="container-fluid">
+            <div class="row">
+                <div class="col-2 containerLogo">
+
+                    <div class="flexboxLogo">
+
+                        <div>
+
+                            <a href="index.html">
+                                <img class="logoImg" src="src/images/logo_website.png" alt="AlaZLibros">
+                            </a>
+                        </div>
+                        <div id="titulLogo">
+                            <a class="logo" href="index.html">
+
+                                AlaZLibros
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 nav flexNav ">
+
+                    <div class="alignMenu ocult">
+                        <ul class="ulMenu">
+                            <li><a class="navLink" href="index.html">Inici</a></li>
+                            <li><a class="navLink" href="llibres.html">Llibres</a></li>
+                            <li><a class="navLink" href="blog.html">Blog</a></li>
+                            <li>
+                                <div class="dropdown">
+                                    <a class="navLink dropbtn" href="#">Empresa</a>
+                                    <div class="dropdown-content">
+    <a href="empresa.html">Empresa</a>
+                                                                            
+<a href="sobre-nosaltres.html">Sobre nosaltres</a>
+                                        <a href="contacte.html">Contacta amb nosaltres</a>
+                                        <a href="FAQ.html">FAQ</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a class="" href="busqueda.html"><img class="busqueda"
+                                        src="src/images/search-solid.svg" alt="lupa"></a></li>
+                        </ul>
+                    </div>
+                    <div class="topnav">
+                        <button class="icon" onclick="mostrarMenu()">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+
+                                <path
+                                    d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" />
+                            </svg> </button>
+                        <div id="myLinks">
+                            <ul class="ulMenu">
+                                <li><a class="navLink" href="index.html">Inici</a></li>
+                                <li><a class="navLink" href="llibres.html">Llibres</a></li>
+                                <li><a class="navLink" href="blog.html">Blog</a></li>
+                                <li>
+                                    <a class="" href="empresa.html">Empresa</a>
+                                    <div class="">
+          <a class="subelements" href="empresa.html">Empresa</a>
+                                        <a class="subelements" href="sobre-nosaltres.html">Sobre nosaltres</a>
+                                        <a class="subelements" href="contacte.html">Contacta amb nosaltres</a>
+                                        <a class="subelements" href="FAQ.html">FAQ</a>
+                                    </div>
+                                </li>
+                                <li class="conectarte.html"><a class="button text-white"
+                                        href="conectarte.html">Conectarte</a></li>
+                                <li class="registrar"><a class="button mt text-white"
+                                        href="registrar.html">Registrarte</a></li>
+                                <li><a class="" href="busqueda.html"><img class="busqueda"
+                                            src="src/images/search-solid.svg" alt="Lupa"></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+                <div class="col-2 flexNav buttonGroup">
+                    <div>
+                        <a class="button" href="conectarte.html">Conectarte</a>
+                    </div>
+                    <div id="container_register">
+                        <a class="button" href="registrar.html">Registrarte</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 contenedorBusqueda">
+                    <input type="search" name="search" id="search" placeholder="Buscar">
+                </div>
+            </div>
+           
+        </nav>
+    </header>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <form action="" method="post">
+                    <div id="flexSearch">
+
+                        <form action="form.php" method="get">
+
+                            <div>
+
+                                <input class="height" type="search" placeholder="Buscar" name="search" id="buscar">
+                            </div>
+                            <div>
+
+                                <select class="height" name="filter_search" id="filter_search">
+
+                                    <option value="1">Llibre</option>
+                                    <option value="2">ISBN</option>
+                                    <option value="3">Autor</option>
+                                    <option value="4">Editorial</option>
+                                </select>
+                            </div>
+                            <div>
+                                <input class="height button" type="submit" id="subm" value="Buscar">
+                        </form>
+                    </div>
+            </div>
+            </form>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <div>
+                    <h2 id="title">Llibres</h2>
+                </div>
+                <div class="rowGallery">
+
+                    <div>
+                        <a href="#"><img class="img" src="src/images/La bestia.png" alt="La bestia">
+                            <h2 class="p">La bestia</h2>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#"><img class="img" src="src/images/carlos.png" alt="La cocina de tu vida">
+                            <h2 class="p">La cocina de tu vida</h2>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="llibre.html"><img class="img" src="src/images/Nunca.png" alt="Nunca">
+                            <h2 class="p">Nunca</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="rowGallery">
+
+                    <div>
+                        <a href="#"><img class="img" src="src/images/ultimo.png" loading="lazy"
+                                alt="Últimos dias en Berlín">
+                            <h2 class="p">Últimos dias en Berlín</h2>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#"><img class="img" src="src/images/Palos.png" loading="lazy"
+                                alt="50 palos y sigo soñando">
+                            <h2 class="p">50 palos y sigo soñando</h2>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#"><img class="img" src="src/images/cuenta.png" loading="lazy"
+                                alt="La cuenta atrás para el verano">
+                            <h2 class="p">La cuenta atrás para el verano</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="rowGallery">
+
+                    <div>
+                        <a href="#"><img class="img" src="src/images/Harry.png" loading="lazy" alt="Saga harry potter">
+                            <h2 class="p">Harry Potter Saga </h2>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#"><img class="img" src="src/images/Mercader.png" loading="lazy"
+                                alt="El mercader de libros">
+                            <h2 class="p">El mercader de libros</h2>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#"><img class="img" src="src/images/Villano.png" loading="lazy" alt="Villano escocés">
+                            <h2 class="p">Villano escocés</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="flexNav1">
+                    <a class="last" href="#">Pàgina anterior</a> <a class="active page" href="#">1</a> <a class="page"
+                        href="#">2</a> <a class="page" href="#">3</a>
+                    <a class="page" href="#">4</a> <a class="next" href="#">Pàgina següent</a>
+                </div>
+            </div>
+            <div class="col-2 borde_gris">
+                <div class="margin_bottom">
+                    <div>
+                        <h2>Generes</h2>
+                    </div>
+                    <div>
+                        <div class="filtros"><input type="checkbox" value="1">Aventura</div>
+                        <div class="filtros"><input type="checkbox" value="2">Romance</div>
+                        <div class="filtros"><input type="checkbox" value="3">Acció</div>
+                        <div class="filtros"><input type="checkbox" value="4">Thriller</div>
+                        <div class="filtros"><input type="checkbox" value="5">Fantasia</div>
+                        <div class="filtros"><input type="checkbox" value="6">Tragedia</div>
+                        <div class="filtros"><input type="checkbox" value="7">Comedia</div>
+                        <div class="filtros"><input type="checkbox" value="8">Misteri</div>
+                        <div class="filtros"><input type="checkbox" value="9">Super Herois</div>
+                        <div class="filtros"><input type="checkbox" value="10">Gore</div>
+                        <div><button id="apply_button" class="button">Aplicar filtres</button></div>
+                    </div>
+                </div>
+                <div>
+                    <h2>Llibres més llegits</h2>
+                </div>
+                <div class="mes-Llegits">
+                    <div>
+                        <a href="llibre.html">
+                            <div class="flexInLine">
+
+                                <div>
+
+                                    <img class="imgSidebar" src="src/images/Nunca.png" loading="lazy" alt="Nunca">
+                                </div>
+                                <div>
+                                    <h2 class="p">Nunca</h2>
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <div class="flexInLine">
+                                <div>
+
+                                    <img class="imgSidebar" src="src/images/Mercader.png" loading="lazy" alt="El mercader de Venecia">
+                                </div>
+                                <div>
+
+                                    <h2 class="p" alt="El mercade de libros">El mercader de...</h2>
+                                </div>
+
+                            </div>
+                    </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <div class="flexInLine">
+
+                            <div>
+
+                                <img class="imgSidebar" src="src/images/Harry.png" loading="lazy" alt="Harry">
+                            </div>
+                            <div>
+
+                                <h2 class="p">Harry Potter Saga </h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <div class="flexInLine">
+                            <div>
+                                <img class="imgSidebar" src="src/images/Villano.png" loading="lazy" alt="Villano escocés">
+                            </div>
+                            <div>
+
+                                <h2 class="p">Villano escocés</h2>
+                            </div>
+                        </div>
+                </div>
+                </a>
+            </div>
+        </div>
+        </div>
+    </main>
+    <aside></aside>
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-3">
+                <ul class="ul">
+                    <li><a class="navLink" href="index.html">Inici</a></li>
+                    <ul class="ul">
+                                <li><a class="navLink" href="llibre.html">Llibre</a></li>
+                            </ul>
+                    <li><a class="navLink" href="blog.html">Blog</a>
+                        <ul class="ul">
+                            <li><a class="navLink" href="noticia.html">Notícia</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a class="navLink" href="empresa.html">Empresa</a>
+                        <ul class="ul">
+                            <li><a class="navLink" href="sobre-nosaltres.html">Sobre nosaltres</a></li>
+                            <li><a class="navLink" href="contacte.html">Contacta amb nosaltres</a></li>
+                            <li><a class="navLink" href="FAQ.html">FAQ</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a class="navLink" href="privacitat.html">Política de Privacitat</a></li>
+                    <li><a class="navLink" href="mapa-web.html">Mapa web</a></li>
+                </ul>
+
+            </div>
+            <div class="col-6">
+                <h3>AlaZLibros Inc.</h3>
+                <h3>NIF: 81432331A</h3>
+                <h3>Direcció: 765 Glenda Creek Apt. 889 - Annapolis, NE / 65525</h3>
+            </div>
+            <div class="col-3 socialDiv">
+                <div><a target="_blank" href="https://www.facebook.com/" title="facebook"><img class="socialNetwork"
+                            src="src/images/facebook-f-brands.svg" loading="lazy" alt="facebook"></a></div>
+                <div><a target="_blank" href="https://www.instagram.com/" title="instagram"><img class="socialNetwork"
+                            src="src/images/instagram-brands.svg" loading="lazy" alt="instagram"></a></div>
+                <div><a target="_blank" href="https://twitter.com/" title="twitter"><img class="socialNetwork"
+                            src="src/images/twitter-brands.svg" loading="lazy" alt="twitter"></a></div>
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>

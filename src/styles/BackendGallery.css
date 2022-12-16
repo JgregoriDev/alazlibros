@@ -1,0 +1,43 @@
+.rowGallery{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 2em;
+}
+a>img{
+    height: 345px;
+    width: 225px;
+}
+.page ,.next,.last {
+    display: inline-flex;
+    margin: 10px;
+    background: #faf27b;
+    color: #767676;
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+}
+.page:hover{
+    border-radius: 100%;
+}
+.page:hover,.next:hover,.last:hover{
+    background: rgb(255,255,255,.7);
+}
+.galleryContainer{
+    padding: 1.9em;
+}
+.flexNav{
+    display: flex;
+    justify-content: end;
+}
+.flexOptions{
+    display: flex;
+    justify-content: end;
+}
+.flexOptions{
+    padding-right: 10px;
+}
+
+.center{
+    text-align: center;
+
+}
